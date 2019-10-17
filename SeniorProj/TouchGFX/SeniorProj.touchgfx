@@ -1,0 +1,212 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Components": [
+          {
+            "RelativeFilename": "realbackground.png",
+            "Alpha": 255,
+            "Name": "image",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\blue_buttons_round_edge_small_pressed.png",
+            "Released": "__designer\\blue_buttons_round_edge_small.png",
+            "Alpha": 255,
+            "Style": "Style4",
+            "Name": "button2",
+            "X": 600,
+            "Y": 400,
+            "Width": 170,
+            "Height": 60,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\blue_buttons_round_edge_small_pressed.png",
+            "Released": "__designer\\blue_buttons_round_edge_small.png",
+            "Alpha": 255,
+            "Style": "Style4",
+            "Name": "button3",
+            "X": 30,
+            "Y": 400,
+            "Width": 170,
+            "Height": 60,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "Number",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId3",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Name": "textArea1",
+            "X": 308,
+            "Y": 66,
+            "Width": 196,
+            "Height": 25,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "ADC1",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId2",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Name": "textArea2",
+            "X": 79,
+            "Y": 140,
+            "Width": 85,
+            "Height": 25,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "ADC2",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId1",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Name": "textArea3",
+            "X": 637,
+            "Y": 152,
+            "Width": 85,
+            "Height": 25,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "Screen1",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "TextEntries": [
+      {
+        "TextEntryId": "Number",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "ADC1",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "ADC2",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId1",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId2",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId3",
+        "IsResource": false
+      }
+    ],
+    "Name": "SeniorProj",
+    "Resolution": {
+      "Width": 800,
+      "Height": 480
+    },
+    "SelectedColorDepth": 24,
+    "StartupScreenName": "Screen1",
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Blue",
+    "TouchGfxPath": "../Middlewares/ST/TouchGFX/touchgfx",
+    "UIPath": ".",
+    "ApplicationTemplate": {
+      "Name": "Simulator",
+      "Version": "2.0.0",
+      "Description": "STM32CubeMX Generated Simulator Application Template",
+      "AvailableColorDepths": [
+        24
+      ],
+      "AvailableSections": [
+        "ExtFlashSection",
+        "IntFlashSection"
+      ],
+      "AvailableResolutions": [],
+      "PhysicalButtons": [],
+      "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j10",
+      "PostGenerateCommand": "touchgfx update_project --project-file=..\\EWARM\\SeniorProj.ewp --gui-group-name=Application/User/TouchGFX/gui --generated-group-name=Application/User/TouchGFX/generated && touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+      "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j10",
+      "RunSimulatorCommand": "build\\bin\\simulator.exe",
+      "CompileTargetCommand": "make -f ../gcc/Makefile -j8",
+      "FlashTargetCommand": "make -f ../gcc/Makefile -j8 flash"
+    },
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape"
+  },
+  "Version": "4.12.3",
+  "CreatedBy": "4.10.0"
+}
