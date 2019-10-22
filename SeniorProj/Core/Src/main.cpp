@@ -71,7 +71,7 @@
 /* USER CODE BEGIN PM */
 
 /* USER CODE END PM */
-
+//General 
 /* Private variables ---------------------------------------------------------*/
 
 CRC_HandleTypeDef hcrc;
@@ -126,7 +126,7 @@ int main(void)
     /* USER CODE BEGIN Init */
 
     /* USER CODE END Init */
-
+//General Kenobi
     /* Configure the system clock */
     SystemClock_Config();
 
